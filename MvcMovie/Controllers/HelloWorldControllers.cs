@@ -1,13 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
+
 namespace MvcMovie.Controllers;
 
-public class HelloWorldControllers : Controller
+public class HelloWorldController : Controller
 {
-    public string Welcome(){
-        return "This is the Welcome action method...";
+    public IActionResult Index()
+    {
+        return View();
     }
 
-    public string Index(){
-        return "This is my defaukt action method...";
+    public IActionResult Welcome()
+    {
+        return View();
     }
+
 }
